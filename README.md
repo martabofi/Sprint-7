@@ -2,7 +2,7 @@ This React web application has encountered challenges while working with json-se
 
 **User Registration**
 
-New users can register by providing their email and password. The registration process is expected to work smoothly.
+New users can register by providing their email and password. The registration process is expected to work smoothly running the **json-server --watch db.json** command in the terminal 
 
 **Login Issues**
 
