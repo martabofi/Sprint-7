@@ -1,0 +1,323 @@
+body,
+html {
+  font-family: monospace, sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-family: monospace, sans-serif;
+  background-color: #000;
+  width: 75rem; 
+  margin: 0 auto; 
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000; 
+  background-color: #000;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  color: white;
+}
+
+.navbar-main {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75rem;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin-top: 25px;
+  opacity: 0.8;
+  font-size: 1.2em;
+}
+
+.login {
+  color: white;
+}
+
+.home-link {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.1em;
+}
+
+.starships-link {
+  color: white;
+  font-size: 1.1em;
+}
+.navbar-logo img {
+  width: 225px;
+  height: auto;
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+.signup,
+.login {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+.navbar-auth button:hover {
+  border-color: #646cff;
+}
+
+.navbar-social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar-social-icons-all {
+  width: 1.3rem;
+  height: auto;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.starships-list-button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+.starships-list {
+  margin-top: 10em;
+  list-style: none;
+  max-width: 100%;
+}
+
+.starships-list li {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #444;
+  border-radius: 12px;
+}
+.starships-list h1 {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+  margin-top: 190px;
+  color: white;
+}
+.starships-list li h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.starships-list li h5 {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.starships-list p {
+  margin-left: 15px;
+}
+
+.starships-list li div {
+  color: #fff;
+}
+
+.starships-list li div.active {
+  display: block;
+}
+
+.full-screen-slider {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+.full-screen-slider .slick-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+  background-color: rgba(24, 24, 24, 0.5);
+  padding: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slick-prev {
+  transform: translateX(100%);
+}
+
+.slick-next {
+  transform: translateX(-100%);
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.slick-prev::before {
+  transform: rotate(-135deg);
+}
+
+.slick-next::before {
+  transform: rotate(45deg);
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.login-form {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.login-cancel-button {
+  color: black;
+  background-color: #444;
+  border-radius: 50px;
+}
+
+.login-form button {
+  color: white;
+}
+
+.login-signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+
+.input-email {
+  border-radius: 8px;
+  height: 45px;
+  margin: 15px;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.input-password {
+  border-radius: 8px;
+  height: 45px;
+  margin: 15px;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.signup-below {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+button {
+background-color: #000;
+border: none;
+}
+
+a:hover, button:hover {
+  color: #535bf2;
+}
