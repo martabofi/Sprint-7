@@ -9,7 +9,7 @@ import Login from "./Login";
 import ProtectedRoute from "../utils/ProtectedRoute";
 
 const App: React.FC = () => {
-  const { isUserLoggedIn } = useElements()
+  const { isUserLoggedIn } = useElements();
   return (
     <div className="app-container">
       <BrowserRouter>
@@ -18,14 +18,14 @@ const App: React.FC = () => {
           <Route path="/" element={<WelcomePage />}></Route>
           <Route path="/users" element={<Signup />}></Route>
           <Route path="/login" element={<Login />}></Route>
-          {/* <Route
+          <Route
             element={
               <ProtectedRoute
                 canActivate={isUserLoggedIn}
                 redirectPath="/login"
               />
             }
-          > */}
+          >
             <Route
               path="/starships"
               element={
@@ -34,7 +34,7 @@ const App: React.FC = () => {
                 </StarshipProvider>
               }
             ></Route>
-          {/* </Route> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
